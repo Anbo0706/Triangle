@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Triangle
+namespace ConstructorSampe
 {
-    class Program
+    class Triangle
     {
-        static void Main(string[] args)
+        private float width; //幅
+        private float height;//高さ
+        public Triangle(float w, float h)
         {
-            Console.WriteLine("Hello World!");
+            this.width = w;
+            this.height = h;
+        }
+        public float GetSurface()
+        {
+            return (width * height / 2);//面積
         }
     }
 }
